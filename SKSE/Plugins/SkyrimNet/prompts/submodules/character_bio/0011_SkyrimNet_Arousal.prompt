@@ -1,0 +1,10 @@
+{% set arousal_level = get_faction_rank(actorUUID, "sla_Arousal") %}
+{% if arousal_level > 0 %}
+- Arousal: {%
+    if arousal_level < 20 %} doesn't want sex {%
+    else if arousal_level < 40 %} would enjoy sex {%
+    else if arousal_level < 60 %} wants sex {%
+    else if arousal_level < 80 %} will ask for sex {%
+                            else %} will beg for sex {%endif
+        %} ( {{ arousal_level }}% )
+{% endif %}
