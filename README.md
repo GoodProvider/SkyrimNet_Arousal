@@ -6,7 +6,10 @@ A simple SkyrimNet adaptor.  It provides two features
 
 **Requires**:
 - SkyrimNet Beta 3 : adds the ability to talk to the LLM 
-- SLA or SLO : adds arousal to the prompt 
+- SLA or SLO : In theory it should work with either. I have only tested with SLO Aroused NG.
 
 **Optional**:
-- (requires [SLO Aroused NG](https://www.nexusmods.com/skyrimspecialedition/mods/151502) : sdds the ability for the LLM to increase or decrease arousal
+- [SLO Aroused NG](https://www.nexusmods.com/skyrimspecialedition/mods/151502) : adds the ability for the LLM to increase or decrease arousal
+
+**Recommanded**
+- [SkyrimNet_SexLab](https://github.com/GoodProvider/SkyrimNet_SexLab): to provide sex act descriptions 

@@ -32,16 +32,16 @@
         <Import>@ModsFolder\SexLabFrameworkAE_v166b\scripts\Source</Import>
 
         
-        <Import>@ModsFolder\OSL Aroused\Scripts\Source</Import>
+        <Import>.\Headers</Import>
         <!--
         <Import>@ModsFolder\SLO Aroused NG\Source\Scripts</Import>
+        <Import>@ModsFolder\OSL Aroused\Scripts\Source</Import>
             <Import>@ModsFolder\PapyrusUtil SE - Modders Scripting Utility Functions</Import>
                 <Import>@ModsFolder\Devious Devices for SE-AE-VR\scripts\Source</Import>
                     <Import>@ModsFolder\Devious Expressions\scripts\Source</Import>
             <Import>@ModsFolder/OStim Standalone - Advanced Adult Animation Framework/Scripts/Source</Import>
                 <Import>@ModsFolder/ConsoleUtilSSE NG\Scripts\Source</Import>
 
-        <Import>.\Headers\PAH Diary Of Mine</Import>
         <Import>@ModsFolder\SLO Aroused NG\Source\Scripts</Import>
             <Import>@ModsFolder\SkyUI\Scripts\Source</Import>
             <Import>@ModsFolder\Devious Devices NG\Source\Scripts</Import>
@@ -52,7 +52,7 @@
         -->
 
         <Import>@ModsFolder\SexLab MatchMaker\scripts\source</Import>
-        <Import>C:\Skyrim\dev\skyrim\Data\Scripts\Source</Import>
+        <Import>C:\Skyrim\dev\skyrim\Data\Source\Scripts</Import>
     </Imports>
     <Folders>
         <Folder>.\Scripts\Source</Folder>

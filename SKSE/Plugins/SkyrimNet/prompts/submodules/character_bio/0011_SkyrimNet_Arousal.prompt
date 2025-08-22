@@ -1,10 +1,11 @@
 {% set arousal_level = get_faction_rank(actorUUID, "sla_Arousal") %}
-{% if arousal_level > 0 %}
+{% if arousal_level > 0 %} 
 - Arousal: {%
-    if arousal_level < 20 %} doesn't want sex {%
-    else if arousal_level < 40 %} would enjoy sex {%
-    else if arousal_level < 60 %} wants sex {%
-    else if arousal_level < 80 %} will ask for sex {%
-                            else %} will beg for sex {%endif
+    if arousal_level < 20.0 %} doesn't want sex {%
+    else if arousal_level < 40.0 %} would enjoy sex with someone they like, no signs of sexual arousal {%
+    else if arousal_level < 60.0 %} wants sex with someone they like, no signs of sexual arousal {%
+    else if arousal_level < 80.0 %} wants to ask for sex with someone they like, no signs of sexual arousal {%
+    else if arousal_level < 95.0 %} wants to beg for sex with someone they desire, subtle signs of sexual arousal  {%
+                            else %} helplessly begs for sex, if asked and refused some will rape for release, obvious signs of sexual arousal {%endif
         %} ( {{ arousal_level }}% )
-{% endif %}
+{% endif %} 
