@@ -113,7 +113,6 @@ Function Change(Actor akActor, string contextJson, string paramsJson) global
         return
     endif
     SkyrimNet_Arousal_Main main = Game.GetFormFromFile(0x800, "SkyrimNet_Arousal.esp") as SkyrimNet_Arousal_Main
-    Trace("Arousal_Change: "+akActor.GetDisplayName()+" paramsJson:"+paramsJson,true)
     String label = SkyrimNetApi.GetJsonString(paramsJson, "how_much","tiny")
     int value = main.GetAmountValue(label)
 
@@ -122,11 +121,8 @@ Function Change(Actor akActor, string contextJson, string paramsJson) global
         value *= -1 
     endif
     value += framework.GetActorExposure(akActor)
-    Trace("ArousalIncrease_Execute: "+paramsJson+" label:"+label+" direction:"+direction+" value:"+value,true)
 
     Faction sla_arousal = Game.GetFormFromFile(0x3FC36, "SexLabAroused.esm") as Faction
-    int before = akActor.GetFactionRank(sla_arousal)
     framework.SetActorExposure(akActor, value)
-    int after = akActor.GetFactionRank(sla_arousal)
-    Trace("ArousalChange: "+akActor.GetDisplayName()+" before:"+before+" after:"+after,true)
+    Trace("ArousalIncrease_Execute: "+paramsJson+" label:"+label+" direction:"+direction+" value:"+value)
 EndFunction

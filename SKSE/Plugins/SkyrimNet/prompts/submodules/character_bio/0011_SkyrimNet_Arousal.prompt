@@ -6,6 +6,7 @@
     else if arousal_level < 60.0 %} wants sex with someone they like, no signs of sexual arousal {%
     else if arousal_level < 80.0 %} wants to ask for sex with someone they like, no signs of sexual arousal {%
     else if arousal_level < 95.0 %} wants to beg for sex with someone they desire, subtle signs of sexual arousal  {%
-                            else %} helplessly begs for sex, if asked and refused some will rape for release, obvious signs of sexual arousal {%endif
-        %} ( {{ arousal_level }}% )
+    else if arousal_level <= 100.0 %} helplessly begs for sex, if asked and refused some will rape for release, signs of sexual arousal {%
+                            else %} if begging has failed, and to moral to rape, will masturbate. obvious signs of sexual arousal {%
+    endif %} ( {{ arousal_level }}% )
 {% endif %} 
