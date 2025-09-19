@@ -12,4 +12,5 @@ A simple SkyrimNet adaptor.  It provides two features
 - [SLO Aroused NG](https://www.nexusmods.com/skyrimspecialedition/mods/151502) : adds the ability for the LLM to increase or decrease arousal
 
 **Recommanded**
-- [SkyrimNet_SexLab](https://github.com/GoodProvider/SkyrimNet_SexLab): to provide sex act descriptions 
+- [SkyrimNet_SexLab](https://github.com/GoodProvider/SkyrimNet_SexLab): to provide SexLab sex act descriptions
+- [OStimNet](https://github.com/tetherball88/OStimNet): to provide Ostim sex act descriptions 
